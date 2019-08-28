@@ -1,0 +1,17 @@
+<div *ngIf="product" class="products">
+    <h2>{{product.bookname | uppercase}} Details</h2>
+    <div><span>bookname: </span>{{product.bookname}}</div>
+    <div><span>isbn: </span>{{product.isbn}}</div>
+    <div><span>author: </span>{{product.author}}</div>
+    <div><span>publicationDate: </span>{{product.publicationDate}}</div>
+    <div><span>language: </span>{{product.language}}</div>
+    <div><span>description: </span>{{product.description}}</div>
+    <!-- <div><span>Update Date: </span>{{product.updated_at | date}}</div> -->
+    <div>
+      <button routerLink="/book-edit/{{product.isbn}}">
+        Edit
+      </button>
+    </div>
+  </div>
+
+

@@ -1,0 +1,24 @@
+<div>
+    <h2>Book Edit</h2>
+    <div>
+      <label>Book Name:
+        <input [(ngModel)]="productData.bookname" placeholder="book Name"/>
+      </label><br>
+      <label>Book isbn:
+        <input [(ngModel)]="productData.isbn" placeholder="book isbn"/>
+      </label><br>
+      <label>Book author:
+        <input [(ngModel)]="productData.author" placeholder="book author"/>
+      </label><br>
+      <label>Book publication Date:
+        <input [(ngModel)]="productData.publicationDate" placeholder="book publicationDate"/>
+      </label><br>
+      <label>Book language:
+        <input [(ngModel)]="productData.language" placeholder="book language"/>
+      </label><br>
+      <label>Book description:
+        <input [(ngModel)]="productData.description" placeholder="book description"/>
+      </label><br>
+    </div>
+    <button (click)="updateProduct()">Update</button>
+  </div>
